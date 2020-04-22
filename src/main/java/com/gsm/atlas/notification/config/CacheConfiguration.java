@@ -33,6 +33,7 @@ public class CacheConfiguration {
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
+            createCache(cm, com.gsm.atlas.notification.domain.Notification.class.getName());
             // jhipster-needle-caffeine-add-entry
         };
     }
