@@ -1,0 +1,44 @@
+{
+    "name": "Notification",
+    "fields": [
+        {
+            "fieldName": "notificationId",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "notificationUid",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "message",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notificationType",
+            "fieldType": "NotificationType",
+            "fieldValues": "INFO,WARNING,ERROR"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "RecordStatus",
+            "fieldValues": "ACTIVE,ARCHIVED"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200422090800",
+    "entityTableName": "notification",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "notification",
+    "applications": "*",
+    "microserviceName": "notification"
+}
