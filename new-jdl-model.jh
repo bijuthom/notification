@@ -1,0 +1,22 @@
+entity Notification {
+    notificationId BigDecimal,
+    notificationUid String,
+    message String,
+    notificationType NotificationType,
+    createdBy String,
+    status RecordStatus
+
+}
+
+enum NotificationType{
+    INFO, WARNING, ERROR
+}
+
+enum RecordStatus{
+   ACTIVE,ARCHIVED
+}
+
+paginate Notification with pagination
+// Set service options to all except few
+service all with serviceImpl
+
